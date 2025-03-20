@@ -400,8 +400,8 @@ header {
     position: fixed;
     bottom: 78px;
     right: 30px;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     background-color: #d4d0d0;
     border-radius: 50%;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
