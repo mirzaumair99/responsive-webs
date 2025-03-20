@@ -1,9 +1,16 @@
-const backtotopbutton = document.querySelector('.back-to-top');
-window.addEventListener('scroll', () => {
+const backToTopBtnEl = document.querySelector('.back-to-top');
+backToTopBtnEl.addEventListener('click', () => {
+    scrollToTop()
+})
 
+function scrollToTop() {
+    window.scrollTo(0, 0)
+}
+
+window.addEventListener('scroll', () => {
     if (window.scrollY > 700) {
-        backtotopbutton.classList.remove('hidden')
+        backToTopBtnEl.classList.remove('hidden')
     } else {
-        backtotopbutton.classList.add('hidden')
+        backToTopBtnEl.classList.add('hidden')
     }
 })
